@@ -9,7 +9,7 @@ current_path = path.abspath(getcwd())
 print('Contact on\nInstagram: @0nh2\nTwitter:@nh_ftw\n')
 
 
-if path.isfile(f'{current_path}\\usernames.txt'):
+if path.isfile(f'{current_path}//usernames.txt'):
     pass
 else:
     print('No file usernames.txt')
@@ -33,13 +33,13 @@ takenNum = 0
 timeOut = 7
 availableUsers = list()
 fileNum = 1
-while path.isfile(f'{current_path}\\Available Users {fileNum}.txt'):
+while path.isfile(f'{current_path}//Available Users {fileNum}.txt'):
     fileNum = fileNum + 1
 proxyFileNum = 1
 
 
 def getLines():
-    theFile = f"{current_path}\\usernames.txt"
+    theFile = f"{current_path}//usernames.txt"
     with open(theFile, 'r') as f:
         usersList = list()
         for user in f.readlines():
@@ -52,7 +52,7 @@ usersLen = len(usersList)
 
 
 def saveAvailables(user):
-    if path.isfile(f'{current_path}\\Available Users {fileNum}.txt'):
+    if path.isfile(f'{current_path}//Available Users {fileNum}.txt'):
         with open(f'Available Users {fileNum}.txt', 'r+') as f:
             if user not in f.read().splitlines():
                 f.write(f'{user}\n')
