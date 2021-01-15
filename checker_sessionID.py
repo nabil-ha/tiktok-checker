@@ -9,7 +9,7 @@ current_path = path.abspath(getcwd())
 print('Contact on\nInstagram: @0nh2\nTwitter:@nh_ftw\n')
 
 
-if path.isfile(f'{current_path}\\usernames.txt'):
+if path.isfile(f'{current_path}//usernames.txt'):
     pass
 else:
     print('No file usernames.txt')
