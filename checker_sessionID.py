@@ -67,7 +67,7 @@ print(
     f'\n\nStart checking list of users\ntimesleep is set to:{timeSleep}\n')
 for i in range(usersCounter, len(usersList)):
     username = usersList[i]
-    sleep(timeSleep)
+    sleep(int(timeSleep))
     if str(username).isdecimal():
         print(
             f'Warning! TikTok users can not be all numbers, like: {username} ')
